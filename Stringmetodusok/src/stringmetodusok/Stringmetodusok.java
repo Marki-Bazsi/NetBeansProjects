@@ -5,6 +5,8 @@
  */
 package stringmetodusok;
 
+import java.util.Scanner;
+
 /**
  *
  * @author user3
@@ -60,7 +62,7 @@ public class Stringmetodusok {
         //keresett karakter(ek) utolsó pozíciója
         System.out.println(szoveg.lastIndexOf("t"));
         
-        //stribng üres-e (boolean)
+        //string üres-e (boolean)
         System.out.println(szoveg.isEmpty());
         String szoveg2 = "";
         System.out.println(szoveg2.isEmpty());
@@ -72,7 +74,7 @@ public class Stringmetodusok {
         //lecseréli a szövegben az első! megadott karakter(ek)et más karakter(ek)re
         System.out.println(szoveg.replaceFirst("e", "b"));
         
-        //string szétszedése4 tömbbe megadott karakterek mentén
+        //string szétszedése tömbbe megadott karakterek mentén
         System.out.println(szoveg.split(" "));
         
         //nem string típusú adat stringé alakítása
@@ -83,8 +85,29 @@ public class Stringmetodusok {
         System.out.println(szoveg.substring(3));
         System.out.println(szoveg.substring(3,6));
         
+ 
+
         
         
-    }
+        //nem enyém
+        String fullName, firstName, lastName;
+        int szokozhely;
+        Scanner bill = new Scanner(System.in);
+        System.out.println("Add meg a teljes nevedet: ");
+        fullName = bill.nextLine();
+            System.out.println(szoveg.split(" "));
+          
+        //2. dik feladat
+            String classId;
+            System.out.println("Add meg a diák osztályát: ");
+            classId = bill.nextLine();
+            if (classId.charAt(4)=='e')
+                classId = classId.replaceFirst("e", "E");
+            System.out.println(classId);
+        
+        //3. dik feladat
+        int evfolyam = Ineteger.parseInt(classId.substring(0,4));
+        if (evfolyam < 2022) class
+        }
     
-}
+    }
